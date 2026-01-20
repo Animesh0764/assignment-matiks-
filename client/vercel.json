@@ -2,6 +2,6 @@
     "buildCommand": "expo export --platform web",
     "outputDirectory": "dist",
     "env": {
-        "EXPO_PUBLIC_API_URL": "@EXPO_PUBLIC_API_URL"
+        "EXPO_PUBLIC_API_URL": "https://assignment-matiks.onrender.com"
     }
 }
