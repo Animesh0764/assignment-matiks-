@@ -29,7 +29,7 @@ export const COLORS = {
   borderDark: '#374151',
 
   // Rank colors
-  rank1: '#fbbf24', // Gold
-  rank2: '#94a3b8', // Silver
-  rank3: '#f97316', // Bronze
+  rank1: '#fbbf24', 
+  rank2: '#94a3b8',
+  rank3: '#f97316', 
 };
