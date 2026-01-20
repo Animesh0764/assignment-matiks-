@@ -3,10 +3,15 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
 )
+
+func init() {
+    gin.SetMode(gin.ReleaseMode)
+}
 
 func main() {
 	fmt.Println("Starting Matiks Leaderboard Server...")
@@ -55,7 +60,10 @@ func main() {
 		}
 	}()
 
-	port := "8080"
+	port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080" // Local development fallback
+    }
 	fmt.Printf("Server running on http://localhost:%s\n", port)
 	fmt.Println("API Endpoints:")
 	fmt.Println("   GET  /api/health")
